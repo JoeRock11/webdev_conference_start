@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp"
+              android:paddingTop="8dp"
+              android:paddingBottom="8dp"
+              android:gravity="center_vertical"
+              android:background="?attr/selectableItemBackground">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgCheese"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="16dp"
+        android:layout_centerVertical="true"
+        android:transitionName="@string/activity_image_trans"
+        tools:src="@mipmap/cheese_1"/>
+
+    <TextView
+        android:id="@+id/txtCheese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:layout_toEndOf="@id/imgCheese"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/colorAccent"
+        tools:text="@string/Text"/>
+
+    <TextView
+        android:id="@+id/txtCheeseInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@id/txtCheese"
+        android:layout_toEndOf="@id/imgCheese"
+        android:maxLines="1"
+        android:ellipsize="end"
+        tools:text="@string/cheese_ipsum2"/>
+</RelativeLayout>
